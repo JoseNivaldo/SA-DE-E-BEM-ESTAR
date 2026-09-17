@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Questionário para ajudar a identificar sinais de fome física e emocional."
+    >
+
+    <title>AlimentaBem</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+
+            <div class="logo">
+                🌱
+            </div>
+
+            <div>
+                <h1>AlimentaBem</h1>
+
+                <p>
+                    Entenda melhor sua fome e suas emoções
+                </p>
+            </div>
+
+        </header>
+
+
+        <!-- QUESTIONÁRIO -->
+        <section
+            id="questionario"
+            class="card"
+        >
+
+            <!-- PROGRESSO -->
+            <div class="topo-questionario">
+
+                <span id="etapaTexto">
+                    Etapa 1
+                </span>
+
+                <span id="porcentagem">
+                    5%
+                </span>
+
+            </div>
+
+
+            <div class="barra">
+
+                <div
+                    id="progresso"
+                    class="progresso"
+                ></div>
+
+            </div>
+
+
+            <!-- ÍCONE -->
+            <div
+                id="icone"
+                class="icone"
+            >
+                💭
+            </div>
+
+
+            <!-- PERGUNTA -->
+            <h2 id="titulo">
+                O que você está percebendo neste momento?
+            </h2>
+
+
+            <p
+                id="descricao"
+                class="descricao"
+            >
+                Vamos observar seu corpo e seus sentimentos para entender melhor essa vontade de comer.
+            </p>
+
+
+            <!-- CONTEÚDO DAS OPÇÕES -->
+            <div
+                id="conteudo"
+                class="conteudo"
+            ></div>
+
+
+            <!-- AJUDA DA RESPOSTA -->
+            <div
+                id="ajudaResposta"
+                class="ajuda escondido"
+            ></div>
+
+
+            <!-- BOTÃO -->
+            <button
+                id="botaoContinuar"
+                class="botao"
+                type="button"
+                disabled
+            >
+                Continuar
+            </button>
+
+        </section>
+
+
+        <!-- RESULTADO -->
+        <section
+            id="resultado"
+            class="card resultado escondido"
+        >
+
+            <div class="resultado-icone">
+                🌱
+            </div>
+
+            <h2>
+                Sua análise
+            </h2>
+
+            <p id="mensagemFinal">
+            </p>
+
+
+            <!-- CLASSIFICAÇÃO -->
+            <div
+                id="classificacaoTexto"
+                class="classificacao"
+            ></div>
+
+
+            <!-- PLANO -->
+            <div class="plano">
+
+                <h3>
+                    💚 O que pode ajudar
+                </h3>
+
+                <div
+                    id="planoPessoal"
+                    class="plano-lista"
+                ></div>
+
+            </div>
+
+
+            <!-- AVISO -->
+            <div class="aviso">
+
+                <strong>
+                    Importante
+                </strong>
+
+                <p>
+                    Este questionário é uma ferramenta de reflexão e não substitui avaliação ou orientação de um profissional de saúde.
+                </p>
+
+            </div>
+
+
+            <button
+                id="botaoReiniciar"
+                class="botao"
+                type="button"
+            >
+                Fazer novamente
+            </button>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+        <footer>
+
+            <p>
+                🌿 Observe seu corpo. Acolha suas emoções. Evite julgamentos.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- MODAL DE RESPIRAÇÃO -->
+    <div
+        id="modalRespiracao"
+        class="modal escondido"
+    >
+
+        <div class="modal-conteudo">
+
+            <button
+                id="fecharModal"
+                class="fechar"
+                type="button"
+            >
+                ×
+            </button>
+
+            <h2>
+                🌬️ Vamos respirar
+            </h2>
+
+            <p>
+                Faça uma pausa de alguns segundos.
+                Não tente eliminar seus sentimentos.
+                Apenas observe sua respiração.
+            </p>
+
+            <div
+                id="circulo"
+                class="circulo"
+            >
+                🌿
+            </div>
+
+            <h3 id="textoRespiracao">
+                Quando estiver pronto(a), comece.
+            </h3>
+
+            <p id="tempo">
+                30 segundos
+            </p>
+
+            <button
+                id="iniciarRespiracao"
+                class="botao"
+                type="button"
+            >
+                Começar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

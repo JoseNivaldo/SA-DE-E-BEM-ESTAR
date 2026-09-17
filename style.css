@@ -1,0 +1,753 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e9f8ef,
+            #f8fff9
+        );
+
+    color: #26352d;
+
+    padding: 30px 15px;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.cabecalho {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.logo {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    font-size: 30px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(42, 105, 70, 0.10);
+}
+
+
+.cabecalho h1 {
+    color: #28734a;
+
+    font-size: 28px;
+
+    margin-bottom: 4px;
+}
+
+
+.cabecalho p {
+    color: #66756c;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card {
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 15px 50px
+        rgba(38, 84, 58, 0.12);
+}
+
+
+/* =====================================================
+   PROGRESSO
+===================================================== */
+
+.topo-questionario {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 8px;
+
+    color: #718078;
+
+    font-size: 13px;
+}
+
+
+.barra {
+    width: 100%;
+
+    height: 8px;
+
+    background: #e8f0eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 35px;
+}
+
+
+.progresso {
+    width: 5%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #49a96f,
+            #76c893
+        );
+
+    border-radius: 10px;
+
+    transition:
+        width 0.4s ease;
+}
+
+
+/* =====================================================
+   ÍCONE
+===================================================== */
+
+.icone {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef9f1;
+
+    font-size: 36px;
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+h2 {
+    text-align: center;
+
+    color: #244d35;
+
+    font-size: 26px;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+
+.descricao {
+    max-width: 600px;
+
+    margin: 0 auto 28px;
+
+    text-align: center;
+
+    color: #68766e;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   OPÇÕES
+===================================================== */
+
+.opcoes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.opcao {
+    width: 100%;
+
+    border: 2px solid #e4ece7;
+
+    background: #ffffff;
+
+    color: #34463b;
+
+    padding: 16px 18px;
+
+    border-radius: 14px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+
+.opcao:hover {
+    border-color: #76c893;
+
+    background: #f5fcf7;
+
+    transform: translateY(-1px);
+}
+
+
+.opcao.selecionada {
+    border-color: #31945a;
+
+    background: #eaf8ee;
+
+    color: #21653d;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 12px
+        rgba(49, 148, 90, 0.12);
+}
+
+
+/* =====================================================
+   AJUDA
+===================================================== */
+
+.ajuda {
+    margin-top: 20px;
+
+    padding: 17px;
+
+    border-radius: 15px;
+
+    background: #f0faf3;
+
+    border-left: 5px solid #55ad72;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    line-height: 1.5;
+}
+
+
+.ajuda strong {
+    color: #28734a;
+}
+
+
+.ajuda span {
+    color: #53655a;
+
+    font-size: 14px;
+}
+
+
+.escondido {
+    display: none !important;
+}
+
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+.botao {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #348e58,
+            #52ae72
+        );
+
+    color: white;
+
+    padding: 16px;
+
+    margin-top: 25px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+
+.botao:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(52, 142, 88, 0.22);
+}
+
+
+.botao:disabled {
+    background: #cbd8cf;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   ESCALA
+===================================================== */
+
+.escala {
+    text-align: center;
+
+    padding: 20px 5px;
+}
+
+
+.escala input {
+    width: 100%;
+
+    accent-color: #3d9d60;
+
+    cursor: pointer;
+}
+
+
+.numero {
+    font-size: 42px;
+
+    font-weight: bold;
+
+    color: #328151;
+
+    margin: 15px;
+}
+
+
+.escala-labels {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #7a877f;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   RESULTADO
+===================================================== */
+
+.resultado {
+    text-align: center;
+}
+
+
+.resultado-icone {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    background: #ecf9f0;
+
+    border-radius: 50%;
+
+    font-size: 40px;
+}
+
+
+.resultado > p {
+    color: #637168;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   CLASSIFICAÇÃO
+===================================================== */
+
+.classificacao {
+    padding: 22px;
+
+    background: #f3faf5;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+.classificacao strong {
+    color: #28734a;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   PLANO
+===================================================== */
+
+.plano {
+    text-align: left;
+
+    margin-top: 25px;
+}
+
+
+.plano h3 {
+    color: #28734a;
+
+    margin-bottom: 15px;
+}
+
+
+.plano-lista {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.plano-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    background: #f8fbf9;
+
+    color: #58665e;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+.plano-item span {
+    color: #3e9a5e;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   AVISO
+===================================================== */
+
+.aviso {
+    margin-top: 25px;
+
+    padding: 17px;
+
+    border-radius: 14px;
+
+    background: #fff8e8;
+
+    color: #74633d;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.aviso strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+footer {
+    text-align: center;
+
+    padding: 25px 10px;
+
+    color: #78857d;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(25, 45, 34, 0.55);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+
+.modal-conteudo {
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.20);
+}
+
+
+.modal-conteudo h2 {
+    margin-top: 5px;
+}
+
+
+.modal-conteudo p {
+    color: #68766e;
+
+    line-height: 1.6;
+}
+
+
+.fechar {
+    position: absolute;
+
+    top: 12px;
+    right: 16px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    color: #7b8980;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   CÍRCULO DA RESPIRAÇÃO
+===================================================== */
+
+.circulo {
+    width: 130px;
+    height: 130px;
+
+    margin: 25px auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #bce9ca,
+            #65b77f
+        );
+
+    font-size: 40px;
+
+    transition:
+        transform 2.5s ease;
+}
+
+
+.circulo.aumentar {
+    transform: scale(1.2);
+}
+
+
+.circulo.diminuir {
+    transform: scale(0.85);
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+
+    .card {
+        padding: 23px 18px;
+
+        border-radius: 20px;
+    }
+
+
+    .cabecalho h1 {
+        font-size: 24px;
+    }
+
+
+    h2 {
+        font-size: 22px;
+    }
+
+
+    .descricao {
+        font-size: 14px;
+    }
+
+
+    .opcao {
+        padding: 15px;
+
+        font-size: 14px;
+    }
+
+
+    .icone {
+        width: 62px;
+        height: 62px;
+
+        font-size: 30px;
+    }
+
+
+    .escala-labels {
+        font-size: 10px;
+    }
+
+}
